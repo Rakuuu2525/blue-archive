@@ -59,7 +59,7 @@
           </div>
         </div>
       </nav>
-      <div class="header__menu">
+      <div class="header__menu has-fade">
         <div class="container">
           <div class="header__menu--top">
             <div class="header__menu--top--icon">
@@ -74,9 +74,14 @@
         </div>
       </div>
     </header>
-    <video id="hi" poster="poster.JPG" autoplay muted loop>
-      <source src="/icons/loop_l_en.mp4" type="video/mp4" />
-    </video>
+    <div class="background">
+      <video class="background__mobile hide-for-desktop" poster="/icons/poster_mobile.jpg" autoplay muted loop>
+        <source src="/icons/bg_mobile.mp4" type="video/mp4" />
+      </video>
+      <video class="background__desktop hide-for-mobile" poster="/icons/poster_desktop.png" autoplay muted loop>
+        <source src="/icons/bg_desktop.mp4" type="video/mp4" />
+      </video>
+    </div>
     <script src="/app/js/script.js"></script>
   </body>
 </html>
