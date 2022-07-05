@@ -1,0 +1,67 @@
+@use "../util" as u;
+@use "colors" as c;
+@use "fonts" as f;
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: gray;
+  font-family: f.$font;
+}
+video {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+
+  @media (min-aspect-ratio: 16/9) {
+    width: 100%;
+    height: auto;
+  }
+  @media (max-aspect-ratio: 16/9) {
+    width: auto;
+    height: 100%;
+  }
+}
+.flex {
+  display: flex;
+  &--jc-c {
+    justify-content: center;
+  }
+  &--jc-sb {
+    justify-content: space-between;
+  }
+  &--jc-s {
+    justify-content: start;
+  }
+  &--ai-c {
+    align-items: center;
+  }
+  &--d-c {
+    flex-direction: column;
+  }
+}
+.container {
+  margin-inline: auto;
+  max-width: u.rem(1440);
+  padding-inline: u.rem(25);
+  padding-block: u.rem(10);
+}
+
+.hide-for-mobile {
+  @include u.breakpoint-down(medium) {
+    display: none;
+  }
+}
+.hide-for-desktop {
+  @include u.breakpoint-up(large) {
+    display: none;
+  }
+}

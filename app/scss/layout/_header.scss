@@ -1,0 +1,115 @@
+@use "../util" as u;
+@use "../global" as g;
+.header {
+  background-color: white;
+  nav {
+    position: relative;
+  }
+  &__menu-icon,
+  #menu-icon {
+    font-size: u.rem(18);
+    color: lightblue;
+  }
+  &__logo {
+    width: u.rem(124);
+    height: u.rem(50);
+    object-fit: cover;
+    @include u.breakpoint-up(medium) {
+      width: u.rem(144);
+      height: u.rem(50);
+    }
+    @include u.breakpoint-up(large) {
+      width: u.rem(154);
+      height: u.rem(60);
+    }
+  }
+  &__links {
+    &--dropdown {
+      display: inline-block;
+      &:hover {
+        .header__links--drop-content {
+          opacity: 1;
+          pointer-events: visible;
+        }
+      }
+    }
+    &--dropbtn {
+      position: relative;
+      display: inline;
+      margin-inline: u.rem(16);
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: g.$Blue;
+        height: u.rem(2);
+        left: 0;
+        right: 0;
+        bottom: u.rem(-3);
+        opacity: 0;
+        transition: all 200ms ease-in-out;
+      }
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+    &--drop-content {
+      position: absolute;
+      top: u.rem(59);
+      background-color: g.$VeryLightBlue;
+      box-shadow: 0 u.rem(8) u.rem(16) 0 rgba(0, 0, 0, 0.2);
+      padding: u.rem(18);
+      border-radius: u.rem(5);
+      transition: all 300ms ease-in-out;
+      a {
+        display: block;
+        line-height: 1.7;
+        font-size: u.rem(16);
+        i {
+          color: g.$Gray;
+          &:hover {
+            color: g.$Gray;
+          }
+        }
+      }
+    }
+  }
+  &__media-links {
+    a {
+      font-size: u.rem(18);
+      color: lightblue;
+      &:hover {
+        color: g.$Blue;
+      }
+      &:not(:last-child) {
+        padding-right: u.rem(10);
+      }
+    }
+    @include u.breakpoint-up(medium) {
+      a {
+        &:not(:last-child) {
+          padding-right: u.rem(18);
+        }
+      }
+    }
+  }
+  &__menu {
+    position: fixed;
+    background-color: lightslategrey;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    &--top {
+      display: flex;
+      align-items: center;
+      &--icon {
+        flex: u.rem(18);
+      }
+      &--logo {
+        flex: auto;
+      }
+    }
+  }
+}

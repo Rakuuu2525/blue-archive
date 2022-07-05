@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/style.css" />
+    <link rel="icon" href="/icons/unnamed.png" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="container flex flex--jc-sb flex--ai-c">
+          <div class="header__menu-icon hide-for-desktop">
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
+          </div>
+          <a href="#">
+            <img class="header__logo" src="/icons/BA_Logo_1.webp" alt="" />
+          </a>
+          <div class="header__links hide-for-mobile">
+            <ul class="header__links--dropdown">
+              <a href="#" id="link1" class="header__links--dropbtn">
+                Game Intro
+              </a>
+              <ul id="myDropdown1" class="header__links--drop-content hide">
+                <a href="#">Overview</a>
+                <a href="#">Student List</a>
+              </ul>
+            </ul>
+            <ul class="header__links--dropdown">
+              <a href="#" id="link2" class="header__links--dropbtn"> Media </a>
+              <ul id="myDropdown2" class="header__links--drop-content hide">
+                <a href="#">Videos</a>
+                <a href="#">Illustration</a>
+              </ul>
+            </ul>
+            <ul class="header__links--dropdown">
+              <a href="#" id="link3" class="header__links--dropbtn">
+                Community
+              </a>
+              <ul id="myDropdown3" class="header__links--drop-content hide">
+                <a href="#">Twitter <i class="fa-solid fa-link"></i></a>
+                <a href="#">Facebook <i class="fa-solid fa-link"></i></a>
+                <a href="#">Discord <i class="fa-solid fa-link"></i></a>
+                <a href="#">Youtube <i class="fa-solid fa-link"></i></a>
+              </ul>
+            </ul>
+          </div>
+          <div class="header__download-links hide-for-mobile">
+            <a href="#"><img src="/icons/ios_link.png" alt="" /></a>
+            <a href="#"><img src="/icons/android_link.png" alt="" /></a>
+          </div>
+          <div class="header__media-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fas fa-volume-mute"></i></a>
+          </div>
+        </div>
+      </nav>
+      <div class="header__menu">
+        <div class="container">
+          <div class="header__menu--top">
+            <div class="header__menu--top--icon">
+              <i id="menu-icon" class="fa-solid fa-x"></i>
+            </div>
+            <div class="header__menu--top--logo">
+              <a href="#">
+                <img class="header__logo" src="/icons/BA_Logo_1.webp" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <video src="/icons/loop_l_en.mp4" autoplay loop></video>
+    <script src="/app/js/script.js"></script>
+  </body>
+</html>

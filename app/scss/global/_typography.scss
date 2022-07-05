@@ -1,0 +1,34 @@
+@use "../util" as u;
+@use "colors" as c;
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}
+a {
+  font-size: u.rem(16);
+  color: c.$Gray;
+  font-weight: 500;
+  transition: color 200ms ease-in-out;
+  @include u.breakpoint-up(large) {
+    font-size: u.rem(18);
+  }
+  &:hover {
+    color: c.$Blue;
+  }
+}
