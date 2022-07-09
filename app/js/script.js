@@ -55,12 +55,12 @@ menuIcon.forEach(function (icon) {
   icon.addEventListener("click", function () {
     if (header.classList.contains("open")) {
       header.classList.remove("open");
-      menu.classList.remove("fade-out");
-      menu.classList.add("fade-in");
+      menu.classList.add("fade-left");
+      menu.classList.remove("fade-right");
     } else {
       header.classList.add("open");
-      menu.classList.add("fade-out");
-      menu.classList.remove("fade-in");
+      menu.classList.add("fade-right");
+      menu.classList.remove("fade-left");
     }
   });
 });

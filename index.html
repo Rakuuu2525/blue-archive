@@ -9,7 +9,7 @@
     <link rel="icon" href="/icons/unnamed.png" />
   </head>
   <body>
-    <header class="header open">
+    <header class="header">
       <nav>
         <div class="container flex flex--jc-sb flex--ai-c">
           <div class="header__menu-icon hide-for-desktop">
@@ -60,7 +60,7 @@
         </div>
       </nav>
       <div class="header__menu has-fade">
-        <div class="container">
+        <div class="container header__menu--top-container">
           <div class="header__menu--top">
             <div class="header__menu--top--icon">
               <i id="menu-icon" class="fa-solid fa-x"></i>
@@ -72,13 +72,46 @@
             </div>
           </div>
         </div>
+        <div class="container header__menu--middle-container">
+          <div class="header__menu--middle">
+            <a href="#">Game Intro</a>
+            <div class="header__menu--middle--links">
+              <a href="#">Overview</a>
+              <a href="#">Student List</a>
+            </div>
+            <a href="#">Media</a>
+            <div class="header__menu--middle--links">
+              <a href="#">Videos</a>
+              <a href="#">Illustration</a>
+            </div>
+            <a href="#">Community</a>
+            <div class="header__menu--middle--links">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <div class="background">
-      <video class="background__mobile hide-for-desktop" poster="/icons/poster_mobile.jpg" autoplay muted loop>
+      <video
+        class="background__mobile hide-for-desktop"
+        poster="/icons/poster_mobile.jpg"
+        autoplay
+        muted
+        loop
+      >
         <source src="/icons/bg_mobile.mp4" type="video/mp4" />
       </video>
-      <video class="background__desktop hide-for-mobile" poster="/icons/poster_desktop.png" autoplay muted loop>
+      <video
+        class="background__desktop hide-for-mobile"
+        poster="/icons/poster_desktop.png"
+        autoplay
+        muted
+        loop
+      >
         <source src="/icons/bg_desktop.mp4" type="video/mp4" />
       </video>
     </div>

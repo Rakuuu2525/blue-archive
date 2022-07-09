@@ -9,32 +9,32 @@
 .has-fade {
   visibility: hidden;
 }
+@keyframes fade-right{
+  from{
+      visibility: hidden;
+      left: -100%;
+  }
+  to{
+      visibility: visible;
+      left: 0;
+  }
+}
+.fade-right {
+  animation: fade-right 200ms ease-in-out forwards;
+}
 
-@keyframes fade-in {
-  from {
-    visibility: hidden;
-    left: -100%;
-  }
-  to {
-    visibility: visible;
-    left: 0;
-  }
-}
-.fade-in {
-  animation: fade-in 200ms ease-in-out forwards;
-}
-
-@keyframes fade-out {
-  from {
-    visibility: visible;
-    left: 0;
+@keyframes fade-left{
+  from{
+      visibility: visible;
+      left: 0;
   }
 
-  to {
-    visibility: hidden;
-    left: -100%;
+  to{
+      visibility: hidden;
+      left: -100%;
   }
 }
-.fade-out {
-  animation: fade-out 200ms ease-in-out forwards;
+.fade-left {
+  animation: fade-left 200ms ease-in-out forwards;
 }
+

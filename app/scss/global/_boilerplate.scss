@@ -45,8 +45,12 @@ video {
 .container {
   margin-inline: auto;
   max-width: u.rem(1440);
-  padding-inline: u.rem(25);
-  padding-block: u.rem(10);
+  padding-inline: u.rem(15);
+  padding-block: u.rem(5);
+  @include u.breakpoint-up(large) {
+    padding-inline: u.rem(25);
+    padding-block: u.rem(10);
+  }
 }
 
 .hide-for-mobile {
