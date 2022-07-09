@@ -83,13 +83,13 @@
         color: g.$Blue;
       }
       &:not(:last-child) {
-        padding-right: u.rem(10);
+        margin-right: u.rem(10);
       }
     }
     @include u.breakpoint-up(medium) {
       a {
         &:not(:last-child) {
-          padding-right: u.rem(18);
+          margin-right: u.rem(18);
         }
       }
     }
@@ -133,14 +133,14 @@
           bottom: -25px;
         }
         a {
-          color: #7F8082;
+          color: #7f8082;
           font-size: u.rem(14);
           &:not(:last-child) {
             margin-right: u.rem(15);
           }
         }
-        i{
-          color: #5B6976;
+        i {
+          color: #5b6976;
           font-size: u.rem(18);
         }
       }

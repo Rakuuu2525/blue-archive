@@ -52,7 +52,19 @@ video {
     padding-block: u.rem(10);
   }
 }
-
+.active {
+  position: relative;
+  color: c.$Blue;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: c.$Blue;
+    height: u.rem(2);
+    left: 0;
+    right: 0;
+    bottom: u.rem(-3);
+  }
+}
 .hide-for-mobile {
   @include u.breakpoint-down(medium) {
     display: none;

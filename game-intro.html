@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/style.css" />
+    <link rel="icon" href="/icons/unnamed.png" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="container flex flex--jc-sb flex--ai-c">
+          <div class="header__menu-icon hide-for-desktop">
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
+          </div>
+          <a href="/index.html">
+            <img class="header__logo" src="/icons/BA_Logo_1.webp" alt="" />
+          </a>
+          <div class="header__links hide-for-mobile">
+            <a href="/index.html" class="header__links--dropbtn"> Home </a>
+            <ul class="header__links--dropdown">
+              <a href="#" id="link1" class="header__links--dropbtn active">
+                Game Intro
+              </a>
+              <ul id="myDropdown1" class="header__links--drop-content hide">
+                <a href="#">Overview</a>
+                <a href="#">Student List</a>
+              </ul>
+            </ul>
+            <ul class="header__links--dropdown">
+              <a href="#" id="link2" class="header__links--dropbtn"> Media </a>
+              <ul id="myDropdown2" class="header__links--drop-content hide">
+                <a href="#">Videos</a>
+                <a href="#">Illustration</a>
+              </ul>
+            </ul>
+            <ul class="header__links--dropdown">
+              <a href="#" id="link3" class="header__links--dropbtn">
+                Community
+              </a>
+              <ul id="myDropdown3" class="header__links--drop-content hide">
+                <a href="https://twitter.com/en_BlueArchive" target="_blank">Twitter <i class="fa-solid fa-link"></i></a>
+                <a href="https://www.facebook.com/EN.BlueArchive/" target="_blank">Facebook <i class="fa-solid fa-link"></i></a>
+                <a href="https://discord.com/invite/bluearchiveglobal" target="_blank">Discord <i class="fa-solid fa-link"></i></a>
+                <a href="https://www.youtube.com/channel/UCsrnDYrkovQhCCE8kwKcvKQ" target="_blank">Youtube <i class="fa-solid fa-link"></i></a>
+              </ul>
+            </ul>
+          </div>
+          <div class="header__download-links hide-for-mobile">
+            <a href="https://apps.apple.com/app/id1571873795" target="_blank"><img src="/icons/ios_link.png" alt="" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.nexon.bluearchive" target="_blank"><img src="/icons/android_link.png" alt="" /></a>
+          </div>
+          <div class="header__media-links">
+              <a href="https://www.facebook.com/EN.BlueArchive/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com/en_BlueArchive" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UCsrnDYrkovQhCCE8kwKcvKQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fas fa-volume-mute"></i></a>
+          </div>
+        </div>
+      </nav>
+      <div class="header__menu has-fade">
+        <div class="container header__menu--top-container">
+          <div class="header__menu--top">
+            <div class="header__menu--top--icon">
+              <i id="menu-icon" class="fa-solid fa-x"></i>
+            </div>
+            <div class="header__menu--top--logo">
+              <a href="/index.html">
+                <img class="header__logo" src="/icons/BA_Logo_1.webp" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container header__menu--middle-container">
+          <div class="header__menu--middle">
+            <a href="#">Game Intro</a>
+            <div class="header__menu--middle--links">
+              <a href="#">Overview</a>
+              <a href="#">Student List</a>
+            </div>
+            <a href="#">Media</a>
+            <div class="header__menu--middle--links">
+              <a href="#">Videos</a>
+              <a href="#">Illustration</a>
+            </div>
+            <a href="#">Community</a>
+            <div class="header__menu--middle--links">
+              <a href="https://www.facebook.com/EN.BlueArchive/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com/en_BlueArchive" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UCsrnDYrkovQhCCE8kwKcvKQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://discord.com/invite/bluearchiveglobal" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="background">
+      <video
+        class="background__mobile hide-for-desktop"
+        poster="/icons/gi-mobile.jpg"
+        autoplay
+        muted
+        loop
+      >
+        <source src="/icons//game-intro-mobile.mp4" type="video/mp4" />
+      </video>
+      <video
+        class="background__desktop hide-for-mobile"
+        poster="/icons//gi-desktop.png"
+        autoplay
+        muted
+        loop
+      >
+        <source src="/icons/game-intro-desktop.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <script src="/app/js/script.js"></script>
+  </body>
+</html>
